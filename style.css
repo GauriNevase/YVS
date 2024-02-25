@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.donate-btn {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.home {
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+  height: 100vh; /* Set height to 100% of viewport height */
+}
+
+.home-subheading{
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+
+.home-container{
+  margin-top: 100px;
+}
+
+.home-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.home-container p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.image {
+  width: 100%; /* Image takes full width on smaller screens */
+  margin-left: 40px; /* Add space between image and text */
+  margin-bottom: 20px; /* Add space below image on larger screens */
+}
+
+.text {
+  width: calc(
+    60% - 20px
+  ); /* Set the width of text to 60% of container width minus the margin */
+  margin-right: 20px; /* Add space between text and image */
+}
+
+@media (min-width: 768px) {
+  /* Styles for larger screens */
+  .content-container {
+    flex-direction: row;
+  }
+
+  .image {
+    width: 40%;
+  }
+
+  .text {
+    display: block; /* Show text on larger screens */
+  }
+}
+
+.explore-btn {
+  background-color: transparent; /* Set background color to transparent */
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid black; /* Add border */
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-emphasis-color: black;
+  text-decoration: none;
+}
+
+
+
+footer {
+  background-color: #f0f0f0;
+}
+
+
+
+.programs {
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+  height: 100vh; /* Set height to 100% of viewport height */
+  background-color: #f0f0f0;
+}
