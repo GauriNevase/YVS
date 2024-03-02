@@ -19,6 +19,8 @@ body {
 
 .home {
   padding: 30px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   margin: 10px;
   text-align: center;
   height: 100vh; /* Set height to 100% of viewport height */
@@ -38,10 +40,10 @@ body {
 .home-container h2 {
   font-size: 2.5em;
   margin-bottom: 30px;
-  text-align: left;
+  text-align: center;
 }
 
-.home-container p {
+.container p {
   font-size: 1.3em;
   margin-bottom: 40px;
   text-align: left;
@@ -107,4 +109,8 @@ footer {
   text-align: center;
   height: 100vh; /* Set height to 100% of viewport height */
   background-color: #f0f0f0;
+}
+
+.programs h2{
+  padding-top: 10vh;
 }
