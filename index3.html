@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yuva Vikas Sanstha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="Bootstrap" width="30" height="24">
+      </a>
+    <a class="navbar-brand" href="#">Yuva Vikas Sanstha</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#our-goals">Our Goals</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#our-programs">Our Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">    
+            <button type="button" class="btn btn-outline-dark">Donate</button>
+        </li>
+      </ul>  
+    </div>
+  </div>
+</nav>
+
+<section class="home min-vh-100 d-flex align-items-center text-center" id="home">
+   
+
+      <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-white">Yuva Vikas Sanstha</h1>
+                <p class="text-white">The youth group form initially as a college group from 1997. 
+                    Group started performing social activities like street play, drama competition etc. 
+                    Later on group member’s decided to register group as a social organization. 
+                    At present 50 youth are working enthusiastically in the group as a committed volunteers.</p>
+                <div>
+                    <a href="#" class="btn btn-primary ">Contact Us</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+</section>
+
+<section class="our-goals" id="our-goals">
+
+  <h1 class="text-center">Our Goals</h1>
+    <!-- <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <h3 class="d-flex justify-content-center">YOUTH</h3>
+          <p>◆ To conduct different projects for value education and personality development of the youth</p>
+          <p>◆ To guide and orient young groups about career opportunities and organize, develop employment providing programmes </p>
+          <p>◆ Provide young community members with services like play facility , library, study classes for their educational and intellectual development</p>
+          <p>◆ Enhance different projects for developing active citizens and social workers in youth groups through educating them on issues like social justice, gender equality, secularism and democracy, environmentalism, honesty and unity etc</p>
+          <p>◆ To create platform for giving scope for young members’ skills and knowledge</p>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <img src="./images/youth1.png" class="" alt="">
+        </div>
+      </div>
+      <div class="row flex-row-reverse">
+        <div class="col-lg-6 col-sm-12">
+          <h3 class="d-flex justify-content-center">Children</h3>
+          <p>◆	 To conduct different projects for social, physical, psychological and educational development of marginalized sections like children in streets, orphan children, slums and tribal children</p> 
+            <p>◆	Organize and develop programmes for socializing value education </p>
+            <p>◆	  To assess and create awareness about effective government schemes, policies and information regarding children.</p>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <img src="./images/youth1.png" class="" alt="">
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-sm-12">
+        <h3 class="d-flex justify-content-center">YOUTH</h3>
+        <p>◆ To conduct different projects for value education and personality development of the youth</p>
+        <p>◆ To guide and orient young groups about career opportunities and organize, develop employment providing programmes </p>
+        <p>◆ Provide young community members with services like play facility , library, study classes for their educational and intellectual development</p>
+        <p>◆ Enhance different projects for developing active citizens and social workers in youth groups through educating them on issues like social justice, gender equality, secularism and democracy, environmentalism, honesty and unity etc</p>
+        <p>◆ To create platform for giving scope for young members’ skills and knowledge</p>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+        <img src="./images/youth1.png" class="" alt="">
+      </div>
+    </div> -->
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+          <a class="nav-link " onclick="openTab('youth')">Youth</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" onclick="openTab('children')">Children</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" onclick="openTab('women')">Women</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" onclick="openTab('civil')">Civil Issues</a>
+      </li>
+  </ul>
+
+  <div id="youth" class="tabcontent">
+      <img src="images/youth.jpg" alt="Youth Image">
+      <h2>Youth Goals</h2>
+      <p>
+          a) Conduct different projects for value education and personality development of the youth.<br>
+          b) Guide and orient young groups about career opportunities and organize employment providing programs.<br>
+          c) Provide young community members with services like play facility, library, study classes for their educational and intellectual development.<br>
+          d) Enhance different projects for developing active citizens and social workers in youth groups through educating them on issues like social justice, gender equality, secularism and democracy, environmentalism, honesty, and unity, etc.<br>
+          e) Create a platform for giving scope for young members’ skills and knowledge.
+      </p>
+  </div>
+
+  <div id="children" class="tabcontent">
+      <img src="images/children_orientation.jpg" alt="Children Image">
+      <h2>Children Goals</h2>
+      <p>
+          a) Conduct different projects for social, physical, psychological and educational development of marginalized sections like children in streets, orphan children, slums, and tribal children.<br>
+          b) Organize and develop programs for socializing value education.<br>
+          c) To assess and create awareness about effective government schemes, policies, and information regarding children.
+      </p>
+  </div>
+
+  <div id="women" class="tabcontent">
+      <img src="images/oreintation2.jpg" alt="Women Image">
+      <h2>Women Goals</h2>
+      <p>
+          a) To establish legal aid and guidance centre on physical, psychological violence against women.<br>
+          b) Set up and socialize different programs for developing leadership skills amongst women.<br>
+          c) Organize and develop projects for women’s financial development and self-sufficiency to promote them as successful entrepreneurs.
+      </p>
+  </div>
+
+  <div id="civil" class="tabcontent">
+      <img src="images/social.jpg" alt="Civil Image">
+      <h2>Civil Issues Goals</h2>
+      <p>
+          a) To set up and conduct different projects on rural and urban social issues like housing, roads, electricity, health, education, etc.<br>
+          b) To establish a complaint resolution centre for working on social basic and needful services.<br>
+          c) To conduct different projects for rural development. To encourage farmers for using governmental schemes and programs.<br>
+          d) To assess and develop a compilation of information regarding developmental issues, different sectors at governmental and semi-governmental authorities. Also, share resources at different organizations and network like-minded organizations for developing projects.<br>
+          e) To organize activities concerning 'Economic and Social Development of downtrodden, tribal, Senior citizen, etc.
+      </p>
+  </div>
+</section>
+
+
+<!-- program section -->
+<section id="our-programs" style="padding-bottom: 100vh;" class="">
+  <h1 class="text-center">Our Programms</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card" style="width: relative;">
+        <img src="./images/books.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: relative;">
+        <img src="./images/books.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: relative;">
+        <img src="./images/books.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: relative;">
+        <img src="./images/books.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+    <div class="col">
+      <figure class="snip1577" style="width: relative;">
+        <img src="images/social.jpg" />
+        <figcaption>
+          <h3>Bodrum Salvador</h3>
+          <h4>Luxery</h4>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+    </div>
+    <div class="col">
+      <figure class="snip1577" style="width: relative;">
+        <img src="images/social.jpg" />
+        <figcaption>
+          <h3>Bodrum Salvador</h3>
+          <h4>Luxery</h4>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+    </div>
+    <div class="col">
+      <figure class="snip1577" style="width: relative;">
+        <img src="images/social.jpg" />
+        <figcaption>
+          <h3>Bodrum Salvador</h3>
+          <h4>Luxery</h4>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+    </div>
+    <div class="col">
+      <figure class="snip1577" style="width: relative;">
+        <img src="images/social.jpg" />
+        <figcaption>
+          <h3>Bodrum Salvador</h3>
+          <h4>Luxery</h4>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+    </div> 
+    
+  </div> -->
+
+    <!-- <div class="row">
+      <div class="col-3 d-flex justify-content-center align-items-center">
+          <img style="width: 100px" src="images/social.jpg" />
+      </div>
+
+      <div class="col-3 d-flex justify-content-center align-items-center">
+        <img style="width: 100px" src="images/social.jpg" />
+
+      </div>
+
+      <div class="col-3 d-flex justify-content-center align-items-center">
+        <img style="width: 100px" src="images/social.jpg" />
+
+      </div>
+      <div class="col-3 d-flex justify-content-center align-items-center">
+        <img style="width: 100px" src="images/social.jpg" />
+
+      </div>
+    </div> -->
+
+</section>
+
+
+
+<script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

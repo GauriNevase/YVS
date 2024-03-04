@@ -1,0 +1,32 @@
+:root{
+    --clr-accent-100: #FEECE9;     
+    --clr-accent-200: #CCD1E4;     
+    --clr-accent-300: #FE7E6D;    
+    --clr-accent-400: #e23d27;   
+    --clr-accent-500: #2F3A8F;
+
+
+    --clr-heading: #212529;
+    --clr-sub-heading: #212529;
+    --clr-info: #212529;
+  
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+  
+    --fs-100: 0.80rem;
+    --fs-150: 0.96rem;
+    --fs-200: 1rem;
+    --fs-250: 1.25rem;
+    --fs-300: 1.5rem;
+    --fs-350: 1.75rem;
+    --fs-400: 2rem;
+    --fs-450: 2.25rem;
+    --fs-500: 2.5rem;
+    --fs-600: 3rem;
+    --fs-650: 3.75rem;
+    --fs-700: 4.5rem;
+    --fs-750: 5rem;
+    --fs-800: 6rem;
+    --fs-900: 7.5rem;
+}
