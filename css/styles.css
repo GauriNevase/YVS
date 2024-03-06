@@ -35,6 +35,7 @@
   margin-bottom: 10px;
   padding-bottom: 17px;
   position: relative;
+  margin-top: 50px;
 }
 .title-div-primary h1::before {
   content: "";
@@ -70,6 +71,7 @@
   margin-bottom: 10px;
   position: relative;
   background-color: #CCD1E4;
+  margin-top: 50px;
 }
 .title-div-secondary h1::before {
   content: "";
@@ -186,4 +188,10 @@ nav {
   .g-map{
     width: 95% !important; 
   }
+}
+
+/* all section */
+.section-title {
+  text-align: center;
+  padding-bottom: 10px;
 }

@@ -1,0 +1,65 @@
+/* Carousel */
+.carousel-inner {
+    padding-top: 10px;
+    height: 420x;
+  }
+  .carousel-img {
+    width:600px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    /* box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.5); */
+  }
+  .carousel-control-prev-icon {
+      background-image: url(https://cdn-icons-png.flaticon.com/512/467/467274.png);
+  }
+  .carousel-control-next-icon {
+      background-image: url(https://cdn-icons-png.flaticon.com/512/467/467282.png);
+  }
+  .carousel-caption {
+    width:100%;
+    left:0 ;
+  }
+  h5 {
+    /* text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black; */
+    margin-bottom: 0;
+  }
+
+  .carousel-control-prev,
+.carousel-control-next {
+  
+  width: 5%;
+  
+}
+
+  
+  /* Media Query for Desktop Web*/
+@media (min-width: 767px) {
+    .carousel-work {
+      align-items: center;
+      justify-content: center;
+      width: 750px;
+    }
+  
+  }
+  
+  /* Media Query for Mobile Web */
+  @media (max-width:500px ){
+    .carousel-img {
+      width: 290px;
+      height: 176.9px;
+    }
+    .carousel-inner {
+      height: 196.9px;
+      padding-top: 10px;
+    }
+    .carousel-work {
+      width: 330px;
+    }
+    .carousel-caption {
+      padding-bottom: 5px;
+    }
+    h5 {
+      font-size: 1rem;
+    }
+  }
