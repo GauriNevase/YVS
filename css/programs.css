@@ -1,14 +1,21 @@
-/* Carousel */
-.carousel-inner {
+
+  /* Carousel */
+  .carousel-div-left{
+    display: none;
+  }
+  .carousel-div-right{
+    display: flex;
+  }
+  .carousel-inner {
     padding-top: 10px;
-    height: 420x;
+    height: 300px;
   }
   .carousel-img {
-    width:600px;
-    height: 400px;
+    width:456px;
+    height: 280px;
     margin: auto;
     border-radius: 10px;
-    /* box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.5); */
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.5);
   }
   .carousel-control-prev-icon {
       background-image: url(https://cdn-icons-png.flaticon.com/512/467/467274.png);
@@ -20,21 +27,9 @@
     width:100%;
     left:0 ;
   }
-  h5 {
-    /* text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black; */
-    margin-bottom: 0;
-  }
-
-  .carousel-control-prev,
-.carousel-control-next {
-  
-  width: 5%;
-  
-}
-
   
   /* Media Query for Desktop Web*/
-@media (min-width: 767px) {
+  @media (min-width: 767px) {
     .carousel-work {
       align-items: center;
       justify-content: center;
@@ -59,7 +54,14 @@
     .carousel-caption {
       padding-bottom: 5px;
     }
-    h5 {
-      font-size: 1rem;
+
+  }
+
+  @media (max-width:992px ){
+    .carousel-div-left{
+      display: flex;
+    }
+    .carousel-div-right{
+      display: none;
     }
   }

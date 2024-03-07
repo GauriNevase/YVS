@@ -1,5 +1,51 @@
 @import "global.css";
 
+/* navbar */
+nav {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link {
+  color: var(--clr-accent-400);
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: var(--clr-accent-100);
+  background-color: var(--clr-accent-300);
+  border-color: var(--clr-accent-300) var(--clr-accent-300) var(--clr-accent-500);
+}
+.nav-tabs .nav-link {
+  border-bottom: 3px solid transparent;
+}
+
+/* Home */
+#home {
+  
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+#home .home-container {
+  height: 100%;
+  width: 100%;
+  padding: 0 10%;
+  background-image: linear-gradient(
+      rgb(254, 236, 233, 0.7),
+      rgb(254, 236, 233, 0.7)
+    ),
+    url("../content/1002.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.carousel-img {
+  height: 100%;
+  width: 100%;
+}
+
 .btn{
   background-color: var(--clr-accent-500);
   color: white;
@@ -15,6 +61,7 @@
   background-color: var(--clr-accent-600);
 }
 
+/* Section Title */
 .title-pad {
   padding-right: 0;
   margin-right: 0;
@@ -114,66 +161,19 @@
   background-color:#CCD1E4;
 }
 
-/* Home */
-#home {
-  
-  height: 100vh;
-  width: 100%;
-  color: white;
-}
-#home .home-container {
-  height: 100%;
-  width: 100%;
-  padding: 0 10%;
-  background-image: linear-gradient(
-      rgb(254, 236, 233, 0.7),
-      rgb(254, 236, 233, 0.7)
-    ),
-    url("../content/1002.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.carousel-img {
-  height: 100%;
-  width: 100%;
-}
-
-
-
 /* Our Goals */
-nav {
-  background-color: white;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .goals{
   background-color: var(--clr-accent-700);
   padding-top: 5vh;
   position: center;
   width:relative;
 }
-
-.nav-link {
-  color: var(--clr-accent-400);
+.card-img-top {
+  border-radius: 9px;
 }
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  color: var(--clr-accent-100);
+.goal-card {
   background-color: var(--clr-accent-300);
-  border-color: var(--clr-accent-300) var(--clr-accent-300) var(--clr-accent-500);
-}
-.nav-tabs .nav-link {
-  border-bottom: 3px solid transparent;
-}
-
-.primary-section{
-  background-color: var();
-}
-.secondary-section{
-  background-color: var(--secondary-color) !important;
+  border-radius: 9px;
 }
 
 .g-map{

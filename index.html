@@ -19,13 +19,14 @@
 </head>
 
 <body>
+
   <!-- navbar -->
   <nav class="navbar shadow-lg navbar-expand-lg bg-white sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="./content/logo.png" alt="Bootstrap" width="40" height="40">
       </a>
-      <a class="navbar-brand" href="#">Yuva Vikas Sanstha</a>
+      <a class="navbar-brand" href="#home">Yuva Vikas Sanstha</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -48,7 +49,7 @@
             <a class="nav-link" href="#contact">Contact Us</a>
           </li>
           <li>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donateModal">
               Donate
             </button>
           </li>
@@ -86,20 +87,19 @@
     <div class="row title-pad">
       <div class="title-div-first title-div-primary">
         <h1 class="">Our Goals</h1>
-      </div>
+      </div> 
     </div>
-
 
     <section class="content-common content-primary" id="">
 
-      <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4 m-1">
+      <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4 m-1 pt-5 mb-5">
 
         <div class="col  d-flex justify-content-center align-items-center">
           <div class="h-100  align-items-center" style="width: 18rem;">
             <img src="./content/gate.jpg" class="card-img-top" alt="...">
             <div class="card-body justify-content-start">
               <h5 class="card-title p-2">Youth</h5>
-              <p class="card-text p-2">The organization prioritizes youth development through value education, career
+              <p class="card-text p-2 pt-0">The organization prioritizes youth development through value education, career
                 guidance, and essential services.
                 It emphasizes active citizenship, social awareness, and skill showcasing for holistic empowerment..</p>
             </div>
@@ -111,7 +111,7 @@
             <img src="./content/gate.jpg" class="card-img-top" alt="...">
             <div class="card-body justify-content-center">
               <h5 class="card-title p-2">Children</h5>
-              <p class="card-text p-2">The organization conducts projects for the development of marginalized children,
+              <p class="card-text p-2 pt-0">The organization conducts projects for the development of marginalized children,
                 addressing social, physical, psychological, and educational needs.
                 It organizes value education programs and raises awareness about government schemes for children.</p>
             </div>
@@ -123,7 +123,7 @@
             <img src="./content/gate.jpg" class="card-img-top" alt="...">
             <div class="card-body justify-content-center">
               <h5 class="card-title p-2">Women</h5>
-              <p class="card-text p-2">The organization aims to establish a legal aid center addressing violence against
+              <p class="card-text p-2 pt-0">The organization aims to establish a legal aid center addressing violence against
                 women, conduct leadership skill
                 development programs, and initiate projects for women's financial independence and entrepreneurship.</p>
             </div>
@@ -135,7 +135,7 @@
             <img src="./content/gate.jpg" class="card-img-top" alt="...">
             <div class="card-body justify-content-center">
               <h5 class="card-title p-2">Civil Issue</h5>
-              <p class="card-text p-2">The organization plans to conduct diverse projects addressing rural and urban
+              <p class="card-text p-2 pt-0">The organization plans to conduct diverse projects addressing rural and urban
                 social issues, establish a complaint resolution center, promote rural development, compile information
                 on
                 developmental issues, and organize activities for economic and social development.</p>
@@ -156,67 +156,210 @@
       </div>
     </div>
 
-
     <section class="content-common content-secondary" style="padding-top: 10vh; padding-bottom: 10vh">
-      <div class="container">
 
-        <div class="container carousel-work" data-aos="fade-up">
-          <div id="carousel-2021-wasteCollected" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover"
-            data-bs-interval="5000">
+      
+    <!-- Row 1 -->
+    <section class="content pt-5" id="program-row-1">
+      <div class="row" style="margin-right: 0;">
 
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carousel-2021-wasteCollected" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carousel-2021-wasteCollected" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carousel-2021-wasteCollected" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+        <!-- <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center align-items-center carousel-div-left">
+          <div class="container carousel-work" data-aos="fade-up" data-aos-delay="200">
+            <div id="carousel-1" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="10000">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item  active item">
+                  <img src="./content/Programs/temporary/4.jpg" class="d-block carousel-img" alt="...">
+                  <div class="carousel-caption d-md-block">
+                    <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Heart attack' and diet</h5>
+                  </div>
+                </div>
+                <div class="carousel-item  item">
+                  <img src="./content/Programs/5.jpg" class="d-block carousel-img" alt="...">
+                  <div class="carousel-caption d-md-block">
+                    <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Cancer checkup Camp</h5>
+                  </div>
+                </div>
+                <div class="carousel-item item">
+                  <img src="./content/Programs/6.jpg" class="d-block carousel-img" alt="...">
+                  <div class="carousel-caption d-md-block">
+                    <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Mental health and Women Wockeart hospital</h5>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active item">
-                <img src="./content/oreintation2.jpg" class="d-block carousel-img" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <h5>Bal Utsav</h5>
+          </div>
+        </div> -->
+
+        
+        <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center align-items-center carousel-div-right">
+          <div class="container carousel-work" data-aos="fade-up" data-aos-delay="400">
+            <div id="carousel-4" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="10000">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item  active item">
+                  <img src="./content/Programs/temporary/4.jpg" class="d-block carousel-img" alt="...">
+                  <div class="carousel-caption d-md-block">
+                    <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Heart attack' and diet</h5>
+                  </div>
+                </div>
+                <div class="carousel-item  item">
+                  <img src="./content/Programs/5.jpg" class="d-block carousel-img" alt="...">
+                  <div class="carousel-caption d-md-block">
+                    <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Cancer checkup Camp</h5>
+                  </div>
+                </div>
+                <div class="carousel-item item">
+                  <img src="./content/Programs/6.jpg" class="d-block carousel-img" alt="...">
+                  <div class="carousel-caption d-md-block">
+                    <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Mental health and Women Wockeart hospital</h5>
+                  </div>
                 </div>
               </div>
-              <div class="carousel-item  item">
-                <img src="./content/games1.jpg" class="d-block carousel-img" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <h5>Bal Utsav</h5>
-                </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+          <div class="container d-flex justify-content-center align-items-center" >
+            <div class="event-div" style="max-width: 30rem">
+              <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="300">
+                <p class="event-title"><b>◆ Heart attack' and diet</b></p>
+                <h6 class="event-info" style="max-width: 35rem;">
+                  आपल्या भागात बदलत्या जीवनशौली मुळे हृदय रोगाचे प्रमाण वाढत आहे. अनेक जणांना प्राणास मुकावे लागत आहे. याबाबत मुंबईतील प्रसिद्ध डॉक्टर मार्फत हृदय रोग आजार, लक्षण, उपाय व आहार याबाबत मार्गदर्शन करण्यात आले.
+                </h6>
               </div>
-              <div class="carousel-item item">
-                <img src="./content/music.jpg" class="d-block carousel-img" alt="...">
-                <div class="carousel-caption d-md-block">
-                  <h5>Musical Performance</h5>
-                </div>
+              <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="400">
+                <p class="event-title"><b>◆ Cancer checkup Camp</b></p>
+                <h6 class="event-info" style="max-width: 35rem;">
+                  आपल्या वसईत व गावात कॅन्सरचे प्रमाण वाढत आहे. कॅन्सर बाबत जन जागृती
+                  सोबत मोफत कॅन्सर तपासणी शिबिर जलपुष्प सिस्टर सोबत आयोजित करण्यात आले
+                  होते. सदर शिबिरासाठी इंडियन कॅन्सर सोसायटी यांनी मोलाची भूमिका निभावली
+                  . साधारण १०५ जणांनी सदर मोफत शिबिराचा लाभ घेतला.
+                </h6>
+              </div>
+              <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="500">
+                <p class="event-title"><b>◆ Mental health and Women Wockeart hospital</b></p>
+                <h6 class="event-info" style="max-width: 35rem;">
+                  महिला आजार, मानसिक आजार, वृध्द काळात घेण्याची काळजी याबाबत वोखार्ट हॉस्पिटल व आधार संस्था यांच्या संयुक्त विद्यमाने मीरारोड येथे आयोजित कार्यक्रमात आपल्या भुईगावमधील महिला ५० महिलांनी सहभाग घेतला.
+                </h6>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2021-wasteCollected"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-2021-wasteCollected"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
 
       </div>
+
+    </section>
+
+    <!-- Row 2 -->
+    <section class="content pt-5" id="program-row-2">
+
+      <div class="row" style="margin-right: 0;">
+
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+          <div class="container d-flex justify-content-center align-items-center">
+            <div class="event-div" style="max-width: 30rem">
+              <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="300">
+                <p class="event-title"><b>◆ Aadhar blood donation camp</b></p>
+                <h6 class="event-info" style="max-width: 35rem;">
+                  जाणीव संघटना मार्फत आयोजित रक्तदान शिबिरात आधार संस्थेने सहभाग दिला.
+                </h6>
+              </div>
+              <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="400">
+                <p class="event-title"><b>◆ Session on women</b></p>
+                <h6 class="event-info" style="max-width: 35rem;">
+                  महिला व आजार याबाबत मार्गदर्शन करताना मुंबई येथील प्रसिद्ध डॉक्टर शशांक केतकर
+                </h6>
+              </div>
+              <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="500">
+                <p class="event-title"><b>◆ आनंदी जीवनाची गुरुकिल्ली</b></p>
+                <h6 class="event-info" style="max-width: 35rem;">
+                  यावर वसईतील प्रसिद्ध पथनाट्यकार जुरान पोलीस सर यांनी हसत खेळत विविध उदाहरण देत मार्गदर्शन केले
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+          <div class="container carousel-work" data-aos="fade-up" data-aos-delay="200">
+            <div id="carousel-2" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="10000">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item  active item">
+                  <img src="./content/Programs/temporary/1.jpg" class="d-block carousel-img" alt="...">
+                  <div class="carousel-caption d-md-block">
+                    <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Aadhar blood donation camp</h5>
+                  </div>
+                </div>
+                <div class="carousel-item  item">
+                  <img src="./content/Programs/2.jpg" class="d-block carousel-img" alt="...">
+                  <div class="carousel-caption d-md-block">
+                    <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Session on women</h5>
+                  </div>
+                </div>
+                <div class="carousel-item item">
+                  <img src="./content/Programs/3.jpg" class="d-block carousel-img" alt="...">
+                  <div class="carousel-caption d-md-block">
+                    <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">आनंदी जीवनाची गुरुकिल्ली</h5>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+    </section>
+
     </section>
   </section>
 
   <!-- Team -->
-  <section class="year-2021-greenStudyTour" id="team">
+  <section class="" id="team">
     <div class="row title-pad">
       <div class="title-div title-div-primary">
         <h1 class="">Team</h1>
       </div>
     </div>
-
 
     <section class="content-common content-primary">
 
@@ -282,7 +425,6 @@
     </section>
   </section>
 
-
   <!-- Contact-->
   <section class="contact-us" id="contact">
     <div class="row title-pad">
@@ -299,10 +441,9 @@
 
               <div class="col-12 d-flex align-items-center justify-content-center" data-aos="fade-up"
                 data-aos-delay="200">
-                <div class="card border-secondary mb-3" style="max-width: 30rem;">
+                <div class="card mb-3" style="max-width: 30rem;">
                   <div class="card-header">Address</div>
                   <div class="card-body text-secondary">
-                    <!-- <h5 class="card-title">Secondary card title</h5> -->
                     <p class="card-text">
                       Yuvak Vachnalaya,
                       Bhuigoan Naka,
@@ -316,10 +457,9 @@
 
               <div class="col-12 d-flex align-items-center justify-content-center" data-aos="fade-up"
                 data-aos-delay="400">
-                <div class="card contact-card-div border-secondary mb-3 d-block" style=" border-radius: 0.375rem; ">
+                <div class="card contact-card-div mb-3 d-block" style=" border-radius: 0.375rem; ">
                   <div class="card-header">Mobile No.</div>
                   <div class="card-body text-secondary">
-                    <!-- <h5 class="card-title">Secondary card title</h5> -->
                     <p class="card-text">Phone:7875321120</p>
                   </div>
                 </div>
@@ -397,9 +537,8 @@
     </footer>
   </div>
 
-
   <!-- donate -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="donateModal" tabindex="-1" aria-labelledby="donate" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -474,7 +613,7 @@
       </div>
     </div>
   </div>
-  
+
   <!-- local -->
   <script src="main.js"></script>
 
