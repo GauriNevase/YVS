@@ -176,18 +176,18 @@ nav {
   border-radius: 9px;
 }
 
-.g-map{
+/* .g-map{
   width: 480px;
   height: 300px;
-}
+} */
 /* Media Query for Mobile Web */
 @media (max-width: 527px ){
   .contact-card-div{
     width: 100% !important;
   }
-  .g-map{
+  /* .g-map{
     width: 95% !important; 
-  }
+  } */
 }
 
 /* all section */
