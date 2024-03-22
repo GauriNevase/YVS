@@ -24,6 +24,34 @@
   <link rel="stylesheet" href="./css/programs.css">
   <link rel="stylesheet" href="./css/contact.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/contact_us.css">
+
+
+
+  <!-- contact form js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init({
+        publicKey: "SbtSDi8e36_NqPiNc",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // these IDs from the previous steps
+        emailjs.sendForm('contact_service', 'contact_form', this)
+          .then(() => {
+            console.log('SUCCESS!');
+          }, (error) => {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
 
 
 </head>
@@ -106,7 +134,8 @@
 
         <div class="col  d-flex justify-content-center align-items-center">
           <div class="h-100  align-items-center" style="width: 18rem;">
-            <img src="./content/gate.jpg" class="card-img-top" alt="...">
+            <img src="./content/gate.jpg" class="card-img-top" alt="..."
+              style="box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;">
             <div class="card-body justify-content-start">
               <h5 class="card-title p-2">Youth</h5>
               <p class="card-text p-2 pt-0">The organization prioritizes youth development through value education,
@@ -119,7 +148,8 @@
 
         <div class="col d-flex justify-content-center align-items-center">
           <div class="h-100 align-items-center" style="width: 18rem;">
-            <img src="./content/gate.jpg" class="card-img-top" alt="...">
+            <img src="./content/gate.jpg" class="card-img-top" alt="..."
+              style="box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;">
             <div class="card-body justify-content-center">
               <h5 class="card-title p-2">Children</h5>
               <p class="card-text p-2 pt-0">The organization conducts projects for the development of marginalized
@@ -132,7 +162,8 @@
 
         <div class="col d-flex  justify-content-center align-items-center">
           <div class="h-100 align-items-center" style="width: 18rem;">
-            <img src="./content/gate.jpg" class="card-img-top" alt="...">
+            <img src="./content/gate.jpg" class="card-img-top" alt="..."
+              style="box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;">
             <div class="card-body justify-content-center">
               <h5 class="card-title p-2">Women</h5>
               <p class="card-text p-2 pt-0">The organization aims to establish a legal aid center addressing violence
@@ -145,7 +176,8 @@
 
         <div class="col d-flex justify-content-center align-items-center">
           <div class="h-100 align-items-center" style="width: 18rem;">
-            <img src="./content/gate.jpg" class="card-img-top" alt="...">
+            <img src="./content/gate.jpg" class="card-img-top" alt="..."
+              style="box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;">
             <div class="card-body justify-content-center">
               <h5 class="card-title p-2">Civil Issue</h5>
               <p class="card-text p-2 pt-0">The organization plans to conduct diverse projects addressing rural and
@@ -176,47 +208,6 @@
       <!-- Row 1 -->
       <section class="content pt-5" id="program-row-1">
         <div class="row" style="margin-right: 0;">
-
-          <!-- <div class="col-lg-6 col-md-12 col-sm-12 justify-content-center align-items-center carousel-div-left">
-          <div class="container carousel-work" data-aos="fade-up" data-aos-delay="200">
-            <div id="carousel-1" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="10000">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item  active item">
-                  <img src="./content/Programs/temporary/4.jpg" class="d-block carousel-img" alt="...">
-                  <div class="carousel-caption d-md-block">
-                    <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Heart attack' and diet</h5>
-                  </div>
-                </div>
-                <div class="carousel-item  item">
-                  <img src="./content/Programs/5.jpg" class="d-block carousel-img" alt="...">
-                  <div class="carousel-caption d-md-block">
-                    <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Cancer checkup Camp</h5>
-                  </div>
-                </div>
-                <div class="carousel-item item">
-                  <img src="./content/Programs/6.jpg" class="d-block carousel-img" alt="...">
-                  <div class="carousel-caption d-md-block">
-                    <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Mental health and Women Wockeart hospital</h5>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div> -->
-
 
           <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center carousel-div-right">
             <div class="container carousel-work" data-aos="fade-up" data-aos-delay="400">
@@ -301,32 +292,7 @@
       <!-- Row 2 -->
       <section class="content pt-5" id="program-row-2">
 
-        <div class="row" style="margin-right: 0;">
-
-          <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
-            <div class="container d-flex justify-content-center align-items-center">
-              <div class="event-div" style="max-width: 30rem">
-                <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="300">
-                  <p class="event-title"><b>◆ Aadhar blood donation camp</b></p>
-                  <h6 class="event-info" style="max-width: 35rem;">
-                    जाणीव संघटना मार्फत आयोजित रक्तदान शिबिरात आधार संस्थेने सहभाग दिला.
-                  </h6>
-                </div>
-                <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="400">
-                  <p class="event-title"><b>◆ Session on women</b></p>
-                  <h6 class="event-info" style="max-width: 35rem;">
-                    महिला व आजार याबाबत मार्गदर्शन करताना मुंबई येथील प्रसिद्ध डॉक्टर शशांक केतकर
-                  </h6>
-                </div>
-                <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="500">
-                  <p class="event-title"><b>◆ आनंदी जीवनाची गुरुकिल्ली</b></p>
-                  <h6 class="event-info" style="max-width: 35rem;">
-                    यावर वसईतील प्रसिद्ध पथनाट्यकार जुरान पोलीस सर यांनी हसत खेळत विविध उदाहरण देत मार्गदर्शन केले
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="row flex-row-reverse" style="margin-right: 0;">
 
           <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
             <div class="container carousel-work" data-aos="fade-up" data-aos-delay="200">
@@ -372,12 +338,41 @@
             </div>
           </div>
 
+          <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center ">
+            <div class="container d-flex justify-content-center align-items-center">
+              <div class="event-div" style="max-width: 30rem">
+                <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="300">
+                  <p class="event-title"><b>◆ Aadhar blood donation camp</b></p>
+                  <h6 class="event-info" style="max-width: 35rem;">
+                    जाणीव संघटना मार्फत आयोजित रक्तदान शिबिरात आधार संस्थेने सहभाग दिला.
+                  </h6>
+                </div>
+                <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="400">
+                  <p class="event-title"><b>◆ Session on women</b></p>
+                  <h6 class="event-info" style="max-width: 35rem;">
+                    महिला व आजार याबाबत मार्गदर्शन करताना मुंबई येथील प्रसिद्ध डॉक्टर शशांक केतकर
+                  </h6>
+                </div>
+                <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="500">
+                  <p class="event-title"><b>◆ आनंदी जीवनाची गुरुकिल्ली</b></p>
+                  <h6 class="event-info" style="max-width: 35rem;">
+                    यावर वसईतील प्रसिद्ध पथनाट्यकार जुरान पोलीस सर यांनी हसत खेळत विविध उदाहरण देत मार्गदर्शन केले
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
 
       </section>
 
     </section>
   </section>
+
+
 
   <!-- Team -->
   <section class="" id="team">
@@ -444,12 +439,130 @@
               </div>
             </div>
 
+            <div class="col collapse-member collapse" data-aos="fade-up" data-aos-delay="600">
+              <div class="card h-100 align-items-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <img src="" style="width: 200px; height: 200px;" class="rounded-circle m-4" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                  <h5 class="card-title">Name</h5>&nbsp;
+                  <p class="card-text text-muted">Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col collapse-member collapse" data-aos="fade-up" data-aos-delay="600">
+              <div class="card h-100 align-items-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <img src="" style="width: 200px; height: 200px;" class="rounded-circle m-4" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                  <h5 class="card-title">Name</h5>&nbsp;
+                  <p class="card-text text-muted">Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col collapse-member collapse" data-aos="fade-up" data-aos-delay="600">
+              <div class="card h-100 align-items-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <img src="" style="width: 200px; height: 200px;" class="rounded-circle m-4" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                  <h5 class="card-title">Name</h5>&nbsp;
+                  <p class="card-text text-muted">Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col collapse-member collapse" data-aos="fade-up" data-aos-delay="600">
+              <div class="card h-100 align-items-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <img src="" style="width: 200px; height: 200px;" class="rounded-circle m-4" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                  <h5 class="card-title">Name</h5>&nbsp;
+                  <p class="card-text text-muted">Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col collapse-member collapse" data-aos="fade-up" data-aos-delay="600">
+              <div class="card h-100 align-items-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <img src="" style="width: 200px; height: 200px;" class="rounded-circle m-4" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                  <h5 class="card-title">Name</h5>&nbsp;
+                  <p class="card-text text-muted">Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col collapse-member collapse" data-aos="fade-up" data-aos-delay="600">
+              <div class="card h-100 align-items-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <img src="" style="width: 200px; height: 200px;" class="rounded-circle m-4" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                  <h5 class="card-title">Name</h5>&nbsp;
+                  <p class="card-text text-muted">Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col collapse-member collapse" data-aos="fade-up" data-aos-delay="600">
+              <div class="card h-100 align-items-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <img src="" style="width: 200px; height: 200px;" class="rounded-circle m-4" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                  <h5 class="card-title">Name</h5>&nbsp;
+                  <p class="card-text text-muted">Position</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col collapse-member collapse" data-aos="fade-up" data-aos-delay="600">
+              <div class="card h-100 align-items-center" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+                <img src="" style="width: 200px; height: 200px;" class="rounded-circle m-4" alt="...">
+                <div class="card-body d-flex justify-content-center">
+                  <h5 class="card-title">Name</h5>&nbsp;
+                  <p class="card-text text-muted">Position</p>
+                </div>
+              </div>
+            </div>
+
+
           </div>
+
+          <button class="btn btn-primary know-more-button show" type="button" data-bs-toggle="collapse"
+            data-bs-target=".collapse-member">
+            Know More
+          </button>
+
         </div>
       </div>
 
     </section>
   </section>
+
+  <!-- contact us -->
+  <section class="our-programs" id="our-programs">
+    <div class="row title-pad">
+      <div class="title-div-first title-div-secondary">
+        <h1 class="">Contact Us</h1>
+
+        <div>
+
+          <form class="cf">
+            <div class="half left cf">
+              <input type="text" id="input-name" placeholder="Name">
+              <input type="email" id="input-email" placeholder="Email address">
+              
+            </div>
+            <div class="half right cf">
+              <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+            </div>
+            <input type="submit" value="Submit" id="input-submit">
+          </form>
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
 
   <!-- Footer-->
 
@@ -497,15 +610,15 @@
                   YUVA VIKAS SANSTHA
                 </a>
               </div>
-              <div class="footer-text">
+              <!-- <div class="footer-text">
                 <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec
                   tetur adipisicing
                   elit,Lorem ipsum dolor sit amet.</p>
-              </div>
+              </div> -->
               <div class="footer-social-icon">
                 <span>Follow us</span>
                 <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                <a href="#"><i class="fab fa-x-twitter twitter-bg"></i></a>
+                <a href="#"><i class="fab fa-x-twitter x-twitter-bg"></i></a>
                 <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
               </div>
             </div>
@@ -623,6 +736,9 @@
       </div>
     </div>
   </div>
+
+
+
 
   <!-- local -->
   <script src="main.js"></script>

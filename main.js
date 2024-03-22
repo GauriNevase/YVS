@@ -1,22 +1,3 @@
-// burger=document.querySelector('.burger')
-// navbar=document.querySelector('.navbar')
-// navList=document.querySelector('.nav-list')
-// rightNav=document.querySelector('.rightNav')
-
-// burger.addEventListener('click',()=>{
-//     rightNav.classList.toggle('v-class-resp');
-//     navList.classList.toggle('v-class-resp');
-//     navbar.classList.toggle('h-nav-resp');
-// })
-
-/* Demo purposes only */
-// $(".hover").mouseleave(
-//     function() {
-//       $(this).removeClass("hover");
-//     }
-//   );
-
-
 // our goals
   function openTab(tabName) {
     var i, tabcontent, tablinks;
@@ -32,3 +13,17 @@
         nav.nav-ink.toggle('nav-link.active');
     })
 }
+
+//team
+const knowMoreButton = document.querySelector('.know-more-button');
+  knowMoreButton.addEventListener('click', () => {
+    document.querySelectorAll('.collapse-member').forEach((element) => {
+      element.classList.toggle('row-col-lg-1');
+      element.classList.toggle('row-col-lg-5');
+    });
+    if (knowMoreButton.textContent === 'Know More') {
+      knowMoreButton.textContent = 'Know Less';
+    } else {
+      knowMoreButton.textContent = 'Know More';
+    }
+  });
