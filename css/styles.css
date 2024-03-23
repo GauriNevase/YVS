@@ -68,7 +68,7 @@ nav {
 }
 .title-div {
   padding-right: 0; 
-  padding-top: 20px; 
+   
 }
 .title-div-primary {
   text-align: center;
@@ -82,7 +82,7 @@ nav {
   margin-bottom: 10px;
   padding-bottom: 17px;
   position: relative;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .title-div-primary h1::before {
   content: "";
@@ -118,7 +118,7 @@ nav {
   margin-bottom: 10px;
   position: relative;
   background-color: #CCD1E4;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .title-div-secondary h1::before {
   content: "";
@@ -141,7 +141,7 @@ nav {
   left: calc(50% - 20px);
 }
 .title-div-first {
-  padding-top: 5.5vh;
+  padding-top: 0;
   padding-right: 0;
 }
 
