@@ -170,12 +170,17 @@ nav {
 }
 .card-img-top {
   border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  height: 200px;
+  width: 300px;
 }
 .goal-card {
   background-color: var(--clr-accent-300);
   border-radius: 9px;
 }
-
+.card-title-goal{
+  color: var(--clr-accent-500);
+}
 /* .g-map{
   width: 480px;
   height: 300px;
