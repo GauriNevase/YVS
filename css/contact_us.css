@@ -21,21 +21,20 @@ form {
    max-width: 600px;
    text-align: center;
    margin: 20px auto;
-  
-  input, textarea {
+
+  input,  textarea {
      border:0; outline:0;
      padding: 1em;
-     @include border-radius(8px);
+     border-radius: 8px;
      display: block;
      width: 100%;
      margin-top: 1em;
      font-family: 'Merriweather', sans-serif;
-     @include box-shadow(0 1px 1px rgba(black, 0.1));
+     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+     box-shadow: rgba(black, 0.1) 0 1px 1px;
      resize: none;
     
-    &:focus {
-       @include box-shadow(0 0px 2px rgba( var(--clr-accent-400);, 1)!important);
-    }
+
   }
   
   #input-submit {

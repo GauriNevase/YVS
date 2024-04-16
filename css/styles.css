@@ -32,18 +32,26 @@ nav {
   width: 100%;
   padding: 0 10%;
   background-image: linear-gradient(
-      rgb(254, 236, 233, 0.7),
-      rgb(254, 236, 233, 0.7)
+      rgba(233, 234, 254, 0.75),
+      rgba(233, 235, 254, 0.75)
     ),
-    url("../content/1002.jpeg");
+    url("../content/background-1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-.carousel-img {
-  height: 100%;
-  width: 100%;
+.home-title {
+  color: var(--clr-accent-300); 
+  text-shadow: 0px 0px 4px #ffffff;
+}
+.home-desc {
+  font-size: 18px;
+  max-width: 520px;
+  color: var(--clr-accent-600);
+}
+.home-img {
+  height: 62vh;
 }
 
 .btn{
@@ -53,6 +61,7 @@ nav {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: rgba(1, 125, 199, 0.3) 0px 0px 0px 3px;
 }
 .btn-secondary {
   background-color: var(--clr-accent-500);
@@ -181,10 +190,19 @@ nav {
 .card-title-goal{
   color: var(--clr-accent-500);
 }
-/* .g-map{
-  width: 480px;
-  height: 300px;
-} */
+
+/* yuvak */
+.yuvak-desc {
+
+}
+
+/* team */
+.team-img{
+  width: 200px; 
+  height: 200px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 /* Media Query for Mobile Web */
 @media (max-width: 527px ){
   .contact-card-div{
