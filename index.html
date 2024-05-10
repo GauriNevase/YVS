@@ -7,6 +7,8 @@
   <title>Yuva Vikas Sanstha</title>
   <link rel="shortcut icon" href="./content/logo.png" type="image/x-icon">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 
@@ -58,7 +60,9 @@
 <body>
 
   <!-- navbar -->
-  <nav class="navbar shadow-lg navbar-expand-lg bg-white fixed-top">
+  <nav class="navbar shadow-lg navbar-expand-lg bg-white fixed-top" data-aos="fade-down"
+  data-aos-easing="linear"
+  data-aos-duration="1500">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="./content/logo.png" alt="Bootstrap" width="40" height="40">
@@ -138,7 +142,8 @@
 
         <div class="col  d-flex justify-content-center align-items-center">
           <div class="h-100  align-items-center" style="width: 18rem;">
-            <img src="content\youth.jpg" class="card-img-top" alt="...">
+            <img src="content\youth.jpg" class="card-img-top" alt="..." data-aos="fade-up">
+            
             <div class="card-body justify-content-start">
               <h4 class="card-title card-title-goal p-2 pt-4 text-start">Youth</h4>
               <p class="card-text p-2 pt-0 text-start">We develop youth through value education, career guidance, and employment
@@ -150,7 +155,7 @@
 
         <div class="col d-flex justify-content-center align-items-center">
           <div class="h-100 align-items-center" style="width: 18rem;">
-            <img src="./content/gate.jpg" class="card-img-top" alt="...">
+            <img src="./content/gate.jpg" class="card-img-top" alt="..." data-aos="fade-up">
             <div class="card-body justify-content-center">
               <h4 class="card-title card-title-goal p-2 pt-4 text-start">Children</h4>
               <p class="card-text p-2 pt-0 text-start">We conduct projects for the development of marginalized
@@ -163,7 +168,7 @@
 
         <div class="col d-flex  justify-content-center align-items-center">
           <div class="h-100 align-items-center" style="width: 18rem;">
-            <img src="content\IMG-20240207-WA0026.jpg" class="card-img-top" alt="...">
+            <img src="content\IMG-20240207-WA0026.jpg" class="card-img-top" alt="..." data-aos="fade-up">
             <div class="card-body justify-content-center">
               <h4 class="card-title card-title-goal p-2 pt-4 text-start">Women</h4>
               <p class="card-text p-2 pt-0 text-start">We establish a legal aid center for women facing violence. Our programs
@@ -175,7 +180,7 @@
 
         <div class="col d-flex justify-content-center align-items-center">
           <div class="h-100 align-items-center" style="width: 18rem;">
-            <img src="content/program/WhatsApp Image 2024-03-10 at 11.34.03_9290b8f1.jpg" class="card-img-top" alt="...">
+            <img src="content/program/WhatsApp Image 2024-03-10 at 11.34.03_9290b8f1.jpg" class="card-img-top" alt="..." data-aos="fade-up">
             <div class="card-body justify-content-center">
               <h4 class="card-title card-title-goal p-2 pt-4 text-start">Civil Issue</h4>
               <p class="card-text p-2 pt-0 text-start">We address housing, roads, and healthcare issues. Our resolution center
@@ -214,7 +219,9 @@
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
               <div class="icon">
-                <span class="fa-solid--child"></span>              
+              <i class="fa-solid fa-child"></i>
+
+                <span class="fa-solid fa-child fa-2xl"></span>              
               </div>
               <h4 class="title text-start"><a href="">Children</a></h4>
               <p class="description text-start">To encourage hidden qualities of children, we organize programme like ‘education thorough entertainment’</p>
@@ -274,13 +281,14 @@
     </div>
 
     <section class="content-common content-primary" style="padding-top: 10vh; ">
+      
 
 
-      <!-- Row 1 Youth-->
+      <!-- Row 1 Youth -->
       <section class="content pt-5" id="program-row-1">
         <div class="row" style="margin-right: 0;">
 
-          <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center carousel-div-right">
+          <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center align-items-center ">
             <div class="container carousel-work" data-aos="fade-up" data-aos-delay="400">
               <div id="carousel-4" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover"
                 data-bs-interval="10000">
@@ -325,7 +333,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
+          <!-- <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
             <div class="container d-flex justify-content-center align-items-center">
               <div class="event-div" style="max-width: 30rem">
                 <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="300">
@@ -354,89 +362,14 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
       </section>
 
-            <!-- row 2 social issues-->
-            <section class="content pt-5" id="program-row-2">
+           
 
-              <div class="row flex-row-reverse" style="margin-right: 0;">
-      
-                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
-                  <div class="container carousel-work" data-aos="fade-up" data-aos-delay="200">
-                    <div id="carousel-2" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover"
-                      data-bs-interval="10000">
-                      <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="0" class="active"
-                          aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      </div>
-                      <div class="carousel-inner">
-                        <div class="carousel-item  active item">
-                          <img src="./content/Programs/temporary/1.jpg" class="d-block carousel-img" alt="...">
-                          <div class="carousel-caption d-md-block">
-                            <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Aadhar blood donation
-                              camp</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item  item">
-                          <img src="./content/Programs/2.jpg" class="d-block carousel-img" alt="...">
-                          <div class="carousel-caption d-md-block">
-                            <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">Session on women</h5>
-                          </div>
-                        </div>
-                        <div class="carousel-item item">
-                          <img src="./content/Programs/3.jpg" class="d-block carousel-img" alt="...">
-                          <div class="carousel-caption d-md-block">
-                            <h5 style="text-shadow: 0 0 15px #000000, 0 0 15px black, 0 0 15px black;">आनंदी जीवनाची
-                              गुरुकिल्ली</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center ">
-                  <div class="container d-flex justify-content-center align-items-center">
-                    <div class="event-div" style="max-width: 30rem">
-                      <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="300">
-                        <p class="event-title text-end"><b>Aadhar blood donation camp</b></p>
-                        <h6 class="event-info text-start" style="max-width: 35rem;">
-                          जाणीव संघटना मार्फत आयोजित रक्तदान शिबिरात आधार संस्थेने सहभाग दिला.
-                        </h6>
-                      </div>
-                      <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="400">
-                        <p class="event-title text-end"><b>Session on women</b></p>
-                        <h6 class="event-info text-start" style="max-width: 35rem;">
-                          महिला व आजार याबाबत मार्गदर्शन करताना मुंबई येथील प्रसिद्ध डॉक्टर शशांक केतकर
-                        </h6>
-                      </div>
-                      <div class="row about-text-wrapper" data-aos="fade-up" data-aos-delay="500">
-                        <p class="event-title text-end"><b>आनंदी जीवनाची गुरुकिल्ली</b></p>
-                        <h6 class="event-info text-start" style="max-width: 35rem;">
-                          यावर वसईतील प्रसिद्ध पथनाट्यकार जुरान पोलीस सर यांनी हसत खेळत विविध उदाहरण देत मार्गदर्शन केले
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-      
-              </div>
-
-    </section>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240" style="background:#f0f4fb ;">
       <path fill="#CCD1E4" fill-opacity="1"
@@ -469,8 +402,11 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-6 d-block p-5 pb-0">
+            <!-- <div class="col-md-6 d-block p-5 pb-0">
               <img class="library-img" src="content\program\IMG-20240310-WA0003.jpg" alt="" srcset="">
+            </div> -->
+            <div class="col-md-6 d-none d-md-block d-md-flex justify-content-end" data-aos="flip-up" data-aos-duration="2000">
+              <img class="library-img" src="./content/program/IMG-20240310-WA0003.jpg" alt="" srcset="">
             </div>
           </div>
         </div>
@@ -755,6 +691,11 @@
 
   <!-- iconify -->
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
