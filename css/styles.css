@@ -1,5 +1,14 @@
 @import "global.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body{
+  font-family:"Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+  overflow-x: hidden;
+}
 a {
   text-decoration: none !important;
 }
@@ -22,6 +31,29 @@ nav {
 .nav-tabs .nav-link {
   border-bottom: 3px solid transparent;
 }
+.navbar-toggler{
+  border: 0;
+}
+.navbar-toggler:focus {
+  border: 0;
+	box-shadow: 0 0 0 0;
+}
+.hamburger-inner{
+  width:30px;
+}
+.hamburger-inner::after{
+  width: 30px;
+  bottom:-8px;
+}
+.hamburger-inner::before{
+  width: 30px;
+  top: -8px;
+}
+/* .hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+	background-color: var(--clr-accent-700) !important;
+} */
 
 /* Home */
 #home {
@@ -227,13 +259,17 @@ nav {
   margin-bottom: 0;
   line-height: 24px;
 }
+.description{
+  text-align: justify;
+  text-justify: inter-word;
+}
 @media (max-width: 767px) {
   #what-we-do .box .box {
     margin-bottom: 20px;
   }
   #what-we-do .box .icon {
     float: none;
-    text-align: center;
+    text-align: start;
     padding-bottom: 15px;
   }
   #what-we-do .box h4,
@@ -253,8 +289,8 @@ nav {
 .card-img-top {
   border-radius: 8px;
   box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(47, 58, 143) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(59, 73, 174) 20px -20px;
-  height: 200px;
-  width: 300px;
+  height: 190px;
+  width: 280px;
 }
 .goal-card {
   background-color: var(--clr-accent-300);
@@ -262,6 +298,10 @@ nav {
 }
 .card-title-goal{
   color: var(--clr-accent-500);
+}
+.card-text{
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* library */

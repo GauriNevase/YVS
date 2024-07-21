@@ -12,6 +12,9 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 
+    <!-- Hamburger -->
+    <link rel="stylesheet" href="/css/hamburger/hamburger.css">
+
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -67,11 +70,18 @@
         <img src="./content/logo.png" alt="Bootstrap" width="40" height="40">
       </a>
       <a class="navbar-brand" href="#home">Yuva Vikas Sanstha</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </button> -->
+      <button class="hamburger hamburger--vortex navbar-toggler " type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+              </span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link text-uppercase" href="#home">Home</a>
@@ -92,7 +102,7 @@
             <a class="nav-link" href="#contact_us">Contact Us</a>
           </li>
           <li>
-            <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#donateModal"
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donateModal"
               id="donate">
               Donate
             </button>
@@ -138,7 +148,7 @@
 
     <section class="content-common content-primary" id="">
 
-      <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4 m-1 pt-5">
+      <div class="row  row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-4 m-1 pt-5">
 
         <div class="col  d-flex justify-content-center align-items-center">
           <div class="h-100  align-items-center" style="width: 18rem;">
@@ -146,7 +156,7 @@
 
             <div class="card-body justify-content-start">
               <h4 class="card-title card-title-goal p-2 pt-4 text-start">Youth</h4>
-              <p class="card-text p-2 pt-0 text-start">We develop youth through value education, career guidance, and
+              <p class="card-text p-2 pt-0 ">We develop youth through value education, career guidance, and
                 employment programs. Our services include education, play facilities, and the promotion of active
                 citizenship. We provide platforms for showcasing youth skills.</p>
             </div>
@@ -158,7 +168,7 @@
             <img src="./content/gate.jpg" class="card-img-top" alt="..." data-aos="fade-up">
             <div class="card-body justify-content-center">
               <h4 class="card-title card-title-goal p-2 pt-4 text-start">Children</h4>
-              <p class="card-text p-2 pt-0 text-start">We conduct projects for the development of marginalized children,
+              <p class="card-text p-2 pt-0 ">We conduct projects for the development of marginalized children,
                 addressing their social, physical, psychological, and educational needs. We organize value education
                 programs and raise awareness about government schemes for children.</p>
             </div>
@@ -170,7 +180,7 @@
             <img src="content\IMG-20240207-WA0026.jpg" class="card-img-top" alt="..." data-aos="fade-up">
             <div class="card-body justify-content-center">
               <h4 class="card-title card-title-goal p-2 pt-4 text-start">Women</h4>
-              <p class="card-text p-2 pt-0 text-start">We establish a legal aid center for women facing violence. Our
+              <p class="card-text p-2 pt-0 ">We establish a legal aid center for women facing violence. Our
                 programs nurture women's leadership skills. We initiate projects fostering financial independence,
                 empowering them to become successful entrepreneurs.</p>
             </div>
@@ -183,7 +193,7 @@
               data-aos="fade-up">
             <div class="card-body justify-content-center">
               <h4 class="card-title card-title-goal p-2 pt-4 text-start">Civil Issue</h4>
-              <p class="card-text p-2 pt-0 text-start">We address issues related to housing, roads, and healthcare. Our
+              <p class="card-text p-2 pt-0  ">We address issues related to housing, roads, and healthcare. Our
                 resolution center handles social needs. We empower rural areas and compile data to foster development,
                 focusing on the economic and social upliftment of marginalized groups.</p>
             </div>
@@ -355,7 +365,7 @@
     <section class="content-common content-secondary">
       <div class="library-container home-container">
         <div class="row justify-content-center align-items-center h-100 m-5" style="margin-top: 10vh">
-          <div class="col-md-6 h-25 d-flex flex-column justify-content-center p-5 pb-0">
+          <div class="col-md-6 h-25 d-flex flex-column justify-content-center pb-0">
 
             <div class="library-desc d-flex justify-content-center">
               <p class="text-start library-para" style="width: 400px">In Bhuigoan <b>since 1973,</b> due to some
