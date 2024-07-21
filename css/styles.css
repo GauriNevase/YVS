@@ -39,7 +39,7 @@ nav {
 	box-shadow: 0 0 0 0;
 }
 .hamburger-inner{
-  width:30px;
+  width:30px !important;
 }
 .hamburger-inner::after{
   width: 30px;
